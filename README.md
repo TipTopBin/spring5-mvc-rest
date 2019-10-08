@@ -1,6 +1,14 @@
-[![CircleCI](https://circleci.com/gh/springframeworkguru/spring5-mvc-rest.svg?style=svg)](https://circleci.com/gh/springframeworkguru/spring5-mvc-rest)
-# Spring Framework 5 MVC Rest Application
+http://localhost:8080/swagger-ui.html
 
-This repository is for an example application built in my Spring Framework 5 - Beginner to Guru
+https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin
+mvn jib:build -Djib.httpTimeout=120000
+mvn compile jib:build \
+    -Djib.to.auth.username=$USERNAME \
+    -Djib.to.auth.password=$PASSWORD
 
-You can learn about my Spring Framework 5 Online course [here.](http://courses.springframework.guru/p/spring-framework-5-begginer-to-guru/?product_id=363173)
+#git Push an existing Git repository
+cd existing_repo
+git remote rename origin old-origin
+git remote add origin git@gitlab.com:tiptopbin_case/erp-service.git
+git push -u origin --all
+git push -u origin --tags

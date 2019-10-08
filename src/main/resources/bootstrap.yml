@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: erp-api
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-svc/eureka/
+    register-with-eureka: false
+  instance:
+    hostname: erp-api-svc
+    non-secure-port: 80
+    non-secure-port-enabled: true
+    instance-id: "erp-api-svc:erp-api:80"
+    status-page-url: http://erp-api-svc/actuator/info
